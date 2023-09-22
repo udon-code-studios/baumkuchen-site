@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // sans: ["Graphik", "sans-serif"],
+        "major-mono": ["Major Mono Display", "sans-serif"],
         serif: ["DM Serif Display", "serif"],
       },
       colors: {
