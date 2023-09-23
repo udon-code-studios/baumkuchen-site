@@ -8,34 +8,45 @@ import icons from "../components/icons";
 <Layout title="BFL">
   <main class="flex flex-col min-h-screen bg-space-cadet p-6">
     <div class="bg-isabelline flex-grow flex flex-col">
-      <div class="grid grid-cols-4 gap-8 px-20 py-20 sm:py-40 justify-items-center">
+      <!-- Navigation -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-12 mx-auto pt-12 sm:py-20 2xl:py-40 justify-items-center"
+      >
         <div
-          class="col-span-4 sm:col-span-2 lg:col-span-1 bg-space-cadet text-isabelline hover:bg-isabelline hover:text-space-cadet border-4 border-space-cadet hover:border-space-cadet duration-200"
+          transition:name="strategy"
+          class="col-span-1 bg-space-cadet text-isabelline hover:bg-isabelline hover:text-space-cadet border-4 border-space-cadet hover:border-space-cadet duration-200 hover:shadow-2xl hover:-translate-y-1"
         >
           <Card title="Strategy" href="/strategy"><icons.MdiDiceMultiple /></Card>
         </div>
         <div
-          class="col-span-4 sm:col-span-2 lg:col-span-1 bg-ultra-violet text-isabelline hover:bg-isabelline hover:text-space-cadet border-4 border-ultra-violet hover:border-space-cadet duration-200"
+          transition:name="performance"
+          class="col-span-1 bg-ultra-violet text-isabelline hover:bg-isabelline hover:text-space-cadet border-4 border-ultra-violet hover:border-space-cadet duration-200 hover:shadow-2xl hover:-translate-y-1"
         >
           <Card title="Performance" href="/performance"><icons.MdiCashUsd /></Card>
         </div>
         <div
-          class="col-span-4 sm:col-span-2 lg:col-span-1 bg-rose-quartz text-isabelline hover:bg-isabelline hover:text-space-cadet border-4 border-rose-quartz hover:border-space-cadet duration-200"
+          transition:name="blog"
+          class="col-span-1 bg-rose-quartz text-isabelline hover:bg-isabelline hover:text-space-cadet border-4 border-rose-quartz hover:border-space-cadet duration-200 hover:shadow-2xl hover:-translate-y-1"
         >
           <Card title="Blog" href="/blog"><icons.MdiDocument /></Card>
         </div>
         <div
-          class="col-span-4 sm:col-span-2 lg:col-span-1 bg-pale-dogwood text-isabelline hover:bg-isabelline hover:text-space-cadet border-4 border-pale-dogwood hover:border-space-cadet duration-200"
+          transition:name="about"
+          class="col-span-1 bg-isabelline text-space-cadet hover:bg-isabelline hover:text-space-cadet border-4 border-ultra-violet hover:border-space-cadet duration-200 hover:shadow-2xl hover:-translate-y-1"
         >
           <Card title="About" href="/about"><icons.MdiCommentQuestion /></Card>
         </div>
       </div>
-      <div class="flex p-12 mt-auto items-center gap-8">
-        <div class="w-16 h-16">
+
+      <!-- Baumkuchen Financial Labs -->
+      <div class="flex p-12 mt-auto justify-center 2xl:justify-start items-center gap-4 sm:gap-6 2xl:gap-8">
+        <div class="w-8 h-8 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16 shrink-0">
           <BaumkuchenLogo />
         </div>
-        <div class="w-1 h-24 bg-space-cadet"></div>
-        <h1 class="text-6xl font-bold font-serif">Baumkuchen Financial Labs</h1>
+        <div class="w-[0.1rem] h-12 sm:h-16 2xl:w-1 2xl:h-24 bg-space-cadet shrink-0"></div>
+        <h1 class="text-2xl sm:text-3xl 2xl:text-6xl font-bold font-serif whitespace-nowrap">
+          Baumkuchen Financial Labs
+        </h1>
       </div>
     </div>
   </main>
